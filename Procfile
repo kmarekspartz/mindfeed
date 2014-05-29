@@ -1,0 +1,1 @@
+worker: python mindfeed/__init__.py
