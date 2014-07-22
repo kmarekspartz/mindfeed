@@ -5,11 +5,11 @@ Heroku app to log entries from an rss/atom feed to beeminder
 """
 import os
 import time
-import feedparser
 from threading import Thread
 
-from hammock import Hammock as BeeminderAPI
+import feedparser
 
+from hammock import Hammock as BeeminderAPI
 
 BEEMINDER_API_URL = os.environ.get('BEEMINDER_API_URL')
 USERNAME = os.environ.get('USERNAME')
