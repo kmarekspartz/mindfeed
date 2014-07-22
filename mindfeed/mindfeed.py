@@ -68,8 +68,3 @@ def main():
             print("Sleeping for {0} more hours.".format(hours_remaining))
             time.sleep(60 * 60)
             hours_remaining = hours_remaining - 1
-
-
-if __name__ == "__main__":
-    main()
-    
