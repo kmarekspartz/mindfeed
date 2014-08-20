@@ -3,13 +3,12 @@ mindfeed:
 
 Heroku app to log entries from an rss/atom feed to beeminder
 """
-import os
 import time
-from threading import Thread
 
+import os
 import feedparser
-
 from hammock import Hammock as BeeminderAPI
+
 
 BEEMINDER_API_URL = os.environ.get('BEEMINDER_API_URL')
 USERNAME = os.environ.get('USERNAME')
@@ -17,14 +16,14 @@ AUTH_TOKEN = os.environ.get('AUTH_TOKEN')
 GOAL = os.environ.get('GOAL')
 FEED_URL = os.environ.get('FEED_URL')
 
-
 beeminder = BeeminderAPI(BEEMINDER_API_URL)
 datapoints = beeminder.users(USERNAME).goals(GOAL, 'datapoints.json')
 
 
 def get_beeminder_links():
     print("Getting Beeminder links...")
-    existing_datapoints = datapoints.GET(params={"auth_token": AUTH_TOKEN}).json()
+    existing_datapoints = datapoints.GET(
+        params={"auth_token": AUTH_TOKEN}).json()
     beeminder_links = set(point['comment'] for point in existing_datapoints)
     return beeminder_links
 

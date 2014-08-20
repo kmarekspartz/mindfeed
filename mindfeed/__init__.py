@@ -1,5 +1,4 @@
-from mindfeed.mindfeed import main
+import os
 
 
-if __name__ == "__main__":
-    main()
+config = os.environ
