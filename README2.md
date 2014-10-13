@@ -74,3 +74,8 @@ Fetches outdated feeds. For each outdated feed:
         - manually selected good entries
         - user behavior
     - Extend model with feed adaptation
+- OPML import
+- http://hechingerreport.org/content/robo-readers-arent-good-human-readers-theyre-better_17021/
+    - "they repeated words less often, used shorter, simpler sentences, and corrected their grammar and spelling."
+- Reports: Suggestions, numbers, Postive feedback
+- http://files.eric.ed.gov/fulltext/EJ936915.pdf
