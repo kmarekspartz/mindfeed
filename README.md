@@ -1,5 +1,7 @@
 # mindfeed
 
+***Deprecated in favor of https://ifttt.com/applets/289003p-make-sure-you-blog-consistently***
+
 Automatically create Beeminder datapoints for posts in RSS/Atom feeds.
 
 
